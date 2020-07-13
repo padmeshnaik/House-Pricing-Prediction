@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<title> My first model</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body >
+    
+    <h1>House Pricing Prediction </h1>
+
+    <div class="login">
+         <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('demo') }}" method="post">
+
+           
+            
+            <button type="submit" name="submit_button" value="Another" class="btn btn-primary btn-block btn-large">Make Another Prediction</button>
+            
+
+            
+        </form>
+    
+       <br>
+       <br>
+       <h3>The predicted price of this house is ₹ {{ prediction }}</h3>
+    
+     </div>
+</body>
