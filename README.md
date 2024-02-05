@@ -9,7 +9,7 @@ Model Evaluation: Evaluation of models based on performance metrics to ensure ac
 User Interface: A simple, user-friendly interface to input house features and receive price predictions (if applicable).
 
 
-Technologies Used
+Technologies Used:
 Python 3
 Pandas for data manipulation
 Matplotlib and Seaborn for data visualization
